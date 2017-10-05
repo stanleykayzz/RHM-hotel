@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Hotel RHM</string>
+    <string name="room_type">Choisissez un type de chambre</string>
+    <string name="travel_cause">Choisissez la raison de votre réservation</string>
+    <string name="currency_type">Choisissez une devise</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="roomList">
+        <item> Chambre simple </item>
+        <item> Chambre double</item>
+        <item> Suite Junior</item>
+        <item> Suite executive</item>
+    </string-array>
+
+    <string-array name="restaurantHours">
+        <item> 12h - 13h </item>
+        <item> 13h - 14h</item>
+        <item> 19h30 - 20h30</item>
+        <item> 20h30 - 21h30</item>
+        <item> 21h30 - 22h30</item>
+    </string-array>
+
+    <string-array name="travelCause">
+        <item> Loisir </item>
+        <item> Professionnel</item>
+    </string-array>
+
+    <string-array name="currencyList">
+        <item> Franc CFA </item>
+        <item> Euro </item>
+        <item> Dollar </item>
+    </string-array>
+
+    <string name="mapKey">AIzaSyCTdiB-7-iIs6sosMjOFhMVI-rfBOZjzXU</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_gallery">gallery</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="failed_token">Client Failed to retrieve token from server</string>
+    <string name="BraintreeFragment_initialized">BraintreeFragment is ready to use</string>
+    <string name="issues_with_authorization">There was an issue with your authorization string</string>
+    <string name="token_failed">Fail to retrieve client token </string>
+    <string name="buy_brand_new_laptop">BUY BRAND NEW LAPTOP</string>
+    <string name="buy_now">BUY NOW</string>
+
+</resources>

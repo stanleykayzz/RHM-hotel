@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rhm.com.fragment.editInformation">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Veuillez saisir votre Ville"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/editCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/validateCity"
+            android:ems="10"
+            android:hint="Veuillez saisir votre Pays"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/validateCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCity"
+            android:layout_centerHorizontal="true"
+            android:text="Confirmer nouvelle ville" />
+
+        <Button
+            android:id="@+id/validateCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCountry"
+            android:layout_centerHorizontal="true"
+            android:text="Confirmer nouveau pays" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/validateCountry"
+            android:ems="10"
+            android:hint="Entrez vore mot de passe actuel"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editPassword"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="Entrez votre nouveau mot  de passe"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editNewPass2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editNewPass"
+            android:layout_below="@+id/editNewPass"
+            android:ems="10"
+            android:hint="Entrez à nouveau votre nouveau mot de passe"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/ValidatePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNewPass2"
+            android:layout_centerHorizontal="true"
+            android:text="confirmer nouveau mot de passe" />
+
+        <TextView
+            android:id="@+id/currencyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ValidatePass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Choisissez une devise pour l'application" />
+
+        <Spinner
+            android:id="@+id/currencies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:entries="@array/currencyList"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/currencyLabel"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/validateCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/currencies"
+            android:text="Confirmer nouvelle devise" />
+    </RelativeLayout>
+
+
+</FrameLayout>

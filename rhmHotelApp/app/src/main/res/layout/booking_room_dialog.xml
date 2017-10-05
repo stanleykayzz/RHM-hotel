@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/radioSexGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/simpleR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chambre Simple "
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/doubleR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chambre double"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/juniorR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suite Junior "
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/execR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suite executive"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="58dp"
+            android:layout_marginStart="53dp"
+            android:text="Annuler" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button8"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="65dp"
+            android:text="Valider" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioSexGroup"
+            android:layout_centerVertical="true"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button10"
+            android:textAlignment="center"
+            android:layout_toEndOf="@+id/button10"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentEnd="true"
+            android:text="+" />
+    </RelativeLayout>
+</LinearLayout>

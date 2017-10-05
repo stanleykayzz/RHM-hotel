@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rhm.com.fragment.freeRoomList">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tous les hébergements comprennent une télévision écran plat, les chaines canal satelites, la clmimatisation et le Wifi"/>
+
+
+            <TextView
+                android:id="@+id/countFreeRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Il y a X chambres disponibles"/>
+
+
+            <ListView
+                android:id="@+id/listFreeRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ListView>
+
+
+        </LinearLayout>
+
+</RelativeLayout>

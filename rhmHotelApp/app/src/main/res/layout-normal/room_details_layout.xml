@@ -1,0 +1,102 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context="rhm.com.fragment.bookingRoom">
+
+    <!-- formulaire de réservation -->
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/room5" />
+
+
+        <TextView
+            android:id="@+id/roomType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pic"
+            android:layout_centerHorizontal="true"
+            android:text="RoomType"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/roomType"
+            android:layout_centerHorizontal="true"
+            android:text="Description :"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/descriptionTitle"
+            android:text="Voici la description de la chambre que l'on va mettre ici pour chaque différents type de chambres"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/priceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/description"
+            android:text="Prix :"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/priceValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/priceLabel"
+            android:textAlignment="center"
+            tools:text="valeur" />
+
+        <Spinner
+            android:id="@+id/currency"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/priceValue"
+            android:entries="@array/currencyList"
+            android:prompt="@string/currency_type"
+            android:spinnerMode="dropdown"></Spinner>
+
+        <GridView
+            android:id="@+id/littleGridView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/currency"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:columnWidth="100dp"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" />
+
+        <!-- on ajoute une petite galerie d'image et à chaque fois qu'on clique sur l'image on change la grande -->
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rhm.com.fragment.bookingHistory">
+
+    <LinearLayout
+        android:id="@+id/tabBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/roomBills"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:text="Chambres" />
+
+        <Button
+            android:id="@+id/restaurantBills"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:text="Restaurant" />
+
+        <Button
+            android:id="@+id/FestiveRoomBills"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:text="Salle de fêtes" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tabLayoout"
+        android:layout_below="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"><!--
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>-->
+    </LinearLayout>
+</RelativeLayout>

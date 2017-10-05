@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rhm.com.fragment.bookingTable">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/restaurant3" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/detail"
+            android:layout_height="wrap_content"
+            android:text="La réservation doit être effectuée le jour même avant 11h30 pour le déjeuner et 18h pour le dîner.
+"/>
+        <TextView
+        android:id="@+id/label2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/label"
+        android:layout_height="wrap_content"
+        android:text="Choisissez  une des plages horaires ci-dessous pour votre réservation"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/spinerInput"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/label2"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+            <Spinner
+                android:id="@+id/spinner"
+                android:entries="@array/restaurantHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputcountRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinerInput"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/countChair"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/spinner"
+                android:layout_alignBottom="@+id/spinner"
+                android:layout_toEndOf="@+id/spinner"
+                android:layout_toRightOf="@+id/spinner"
+                android:ems="10"
+                android:hint="Nombre de personnes"
+                android:inputType="numberSigned" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/validate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservez"
+            android:layout_below="@+id/inputcountRoom"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
